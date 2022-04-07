@@ -1,0 +1,195 @@
+.hero__wrapper {
+    background-image: url('../img/bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.hero {
+    text-align: center;
+    padding: 20rem 0;
+    position: relative;
+}
+.hero .title {
+    margin-bottom: 2rem;
+}
+.hero .text {
+    margin: 0 auto 3rem;
+    max-width: 30rem;
+    color: var(--third-brand-color);
+}
+.hero__block {
+    background-color: var(--main-bg-color);
+    padding: 3rem 1rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+.hero-btn,
+.hero__contacts {
+    display: none;
+}
+
+
+
+
+.contacts {
+    padding: 15rem 0;
+    text-align: center;
+    position: relative;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 4rem;
+}
+.contacts .img {
+    margin-bottom: 3rem;
+    max-width: 60rem;
+}
+.contacts .text {
+    font-family: var(--title-font);
+}
+
+
+@media screen and (min-width: 1440px)  {
+    .hero__wrapper::before {
+        background-color: var(--main-bg-color);
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: calc(100% - 20rem);
+        width: 25%;
+    }
+    .hero {
+        text-align: left;
+        padding: 20rem 0 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .hero__block {
+        /* border: .1rem solid red; */
+        margin-left: 0;
+        padding: 8rem 0 0 8rem;
+        position: relative;
+    }
+    .hero .title {
+        width: fit-content;
+        margin-bottom: 4rem;
+        border-bottom: 1rem solid var(--second-brand-color);
+    }
+    .hero .text {
+        margin-left: 0;
+        margin-bottom: 18rem;
+    }
+    .hero-box {
+        padding-right: 8rem;
+    }
+    .hero .btn {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .hero-btn {
+        display: block;
+        height: 7rem;
+        width: 8rem;
+        background-color: var(--main-text-color);
+        position: absolute;
+        bottom: 0;
+        right: -8rem;
+        background-image: url("data:image/svg+xml,%3Csvg fill='%23fff' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 490 490' style='enable-background:new 0 0 490 490;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath d='M428.75,214.562L244.997,395.515L61.25,214.562v-59.587l140.69,138.781l43.056,42.472l43.057-42.471L428.75,154.972 V214.562 M490,240.122V8.608L244.996,250.28L0,8.608v231.514l244.996,241.27L490,240.122L490,240.122z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto 50%;
+    }
+    .hero__contacts {
+        display: flex;
+        background-color: var(--main-text-color);
+    }
+    .hero-list {
+        display: flex;
+        height: 7rem;
+        align-items: center;
+        padding: 0 2rem;
+        z-index: 2;
+    }
+    .hero-item:not(:last-child) {
+        margin-right: 3rem;
+    }
+    .hero-item .text {
+        color: var(--sub-text-color);
+        position: relative;
+    }
+    .hero-item .text::after {
+        background-color: var(--sub-text-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: .1rem;
+        width: 0;
+        display: block;
+        content: '';
+        transition: all .3s ease-in-out;
+    }
+    .hero-item .text:hover::after {
+        width: 100%;
+    }
+    .hero__wrapper::after {
+        background-color: var(--main-text-color);
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 7rem;
+        width: 22%;
+    }
+
+
+
+
+    .contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacts .text {
+        color: var(--sub-text-color);
+    }
+    .contacts__list {
+        background-color: var(--second-brand-color);
+        padding: 5rem;
+        margin-left: -7rem;
+        position: relative;
+    }
+    .contacts__list::before {
+        background-color: rgba(0, 0, 0, .5);
+        display: block;
+        content: '';
+        width: 140%;
+        height: 140%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: -2;
+    }
+    .contacts__item:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    .contacts .img {
+        margin: 0;
+        width: 80rem;
+        height: 40rem;
+        object-fit: cover;
+    }
+}
+@media screen and (min-width: 2500px)  {
+    .hero__wrapper::before {
+        width: 35%;
+    }
+    .hero__wrapper::after {
+        width: 33%;
+    }
+}
