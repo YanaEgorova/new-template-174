@@ -12,6 +12,12 @@
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+.disable-btn {
+    pointer-events: none;
+}
+.disable-btn svg {
+    opacity: 0.3;
+}
 .prod__img-box {
     margin-bottom: 3rem;
 }
