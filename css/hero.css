@@ -40,10 +40,7 @@
 .contacts__item:not(:last-child) {
     margin-bottom: 4rem;
 }
-.contacts .img {
-    margin-bottom: 3rem;
-    max-width: 60rem;
-}
+
 .contacts .text {
     font-family: var(--title-font);
 }
@@ -178,12 +175,7 @@
     .contacts__item:not(:last-child) {
         margin-bottom: 3rem;
     }
-    .contacts .img {
-        margin: 0;
-        width: 80rem;
-        height: 40rem;
-        object-fit: cover;
-    }
+ 
 }
 @media screen and (min-width: 2500px)  {
     .hero__wrapper::before {
