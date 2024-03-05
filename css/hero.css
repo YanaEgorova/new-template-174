@@ -23,6 +23,7 @@
     padding: 3rem 1rem;
     width: fit-content;
     margin: 0 auto;
+    max-width: 60rem;
 }
 .hero-btn,
 .hero__contacts {
@@ -67,7 +68,7 @@
     .hero__block {
         /* border: .1rem solid red; */
         margin-left: 0;
-        padding: 8rem 0 0 8rem;
+        padding: 4rem 0 0 4rem;
         position: relative;
     }
     .hero .title {
